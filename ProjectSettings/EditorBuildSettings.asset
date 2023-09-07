@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/answer_wrong_page.unity
     guid: d94d24e913dc3c84fbe7d70968c48698
+  - enabled: 1
+    path: Assets/Scenes/splash_page.unity
+    guid: d6502ae6449ce2e458da9c82354249d4
+  - enabled: 1
+    path: Assets/Scenes/TimeOver.unity
+    guid: c084b7b032fa6254aa5e801962d832ff
   m_configObjects: {}
