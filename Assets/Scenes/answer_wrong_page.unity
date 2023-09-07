@@ -485,7 +485,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -500}
-  m_SizeDelta: {x: 500, y: 60}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573684280
 MonoBehaviour:
@@ -508,7 +508,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -532,7 +532,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 573684283}
-        m_TargetAssemblyTypeName: BackToMainPage, Assembly-CSharp
+        m_TargetAssemblyTypeName: GoToMap, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 1
         m_Arguments:
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 573684278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d81ee4c2a52caac40a9305ddc6860991, type: 3}
+  m_Script: {fileID: 11500000, guid: e497d9e329ead6e41a4501bd540ac5f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &921961615
@@ -628,7 +628,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921961617
 MonoBehaviour:
@@ -650,12 +650,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'answer is...
-
-    WRONG...'
+  m_text: "\uC548\uD0C0\uAE5D\uC9C0\uB9CC \uD2C0\uB838\uB124\uC694..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
+  m_sharedMaterial: {fileID: 3440491480243463787, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -878,17 +876,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: back to main page
+  m_text: "\uB2E4\uB978 \uB79C\uB364\uBC15\uC2A4 \uC7A1\uC73C\uB7EC \uAC00\uAE30"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
+  m_sharedMaterial: {fileID: 3440491480243463787, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -990,7 +988,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 600, y: 200}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095054134
 MonoBehaviour:
@@ -1012,18 +1010,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "sorry, you got only 100 points. you can exchange points as curtureland^^
-    when you gain lots. \nwe hope that you will get more points on another quiz!"
+  m_text: "100\uD3EC\uC778\uD2B8\uB9CC \uD68D\uB4DD\uD558\uC168\uC5B4\uC694.\n\uB9C8\uC774\uD398\uC774\uC9C0\uC5D0\uC11C
+    \uC801\uB9BD\uB41C \uD3EC\uC778\uD2B8\uB97C \uD655\uC778\uD558\uC138\uC694!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
+  m_sharedMaterial: {fileID: 3440491480243463787, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1047,7 +1045,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
