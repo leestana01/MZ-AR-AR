@@ -9,10 +9,10 @@ public class pop_duration : MonoBehaviour
 {
     public void Start()
     {
-        StartCoroutine(TransitionToBScene());
+        StartCoroutine(TransitionToQuizScene());
     }
 
-    public IEnumerator TransitionToBScene()
+    public IEnumerator TransitionToQuizScene()
     {
         yield return new WaitForSeconds(2f);
 
