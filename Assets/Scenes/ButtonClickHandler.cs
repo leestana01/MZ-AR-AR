@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+//랜덤박스를 클릭한 횟수를 띄워주기 위한 스크립트
+
 public class ButtonClickHandler : MonoBehaviour
 {
     public TMP_Text textToDecrease;
@@ -27,8 +29,18 @@ public class ButtonClickHandler : MonoBehaviour
         //텍스트가 0이 되면 목표 씬으로 이동
         if (currentValue == 0)
         {
-            SceneManager.LoadScene("quizpage");
+            StartCoroutine(TransitionToPOPScene());
         }
     }
+    
+    public IEnumerator TransitionToPOPScene()
+    {
+
+        //대기 시간 (pop 화면 지속 시간)
+        yield return new WaitForSeconds(0.05f);
+
+        SceneManager.LoadScene("pop");
+    }
+
 }
 

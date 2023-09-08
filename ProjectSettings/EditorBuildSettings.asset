@@ -9,33 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/MyPage.unity
+    path: Assets/Scenes/AllScene/MyPage.unity
     guid: d5bf029f22c2c5c43ba84ee7a72b2288
   - enabled: 1
-    path: Assets/Scenes/MainPage.unity
+    path: Assets/Scenes/AllScene/MainPage.unity
     guid: aa877901d86c8504db7532c6b24d058a
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Scenes/AllScene/Map.unity
     guid: 561d138d50e1a0d47a2f7d9e0fecc685
   - enabled: 1
-    path: Assets/Scenes/ARCam.unity
+    path: Assets/Scenes/AllScene/ARCam.unity
     guid: a54becc3e708eb04299b762544168230
   - enabled: 1
-    path: Assets/Scenes/quizpage.unity
+    path: Assets/Scenes/AllScene/quizpage.unity
     guid: e8b7d950d8e2d3640905119a1827864f
   - enabled: 1
-    path: Assets/Scenes/answerpage.unity
+    path: Assets/Scenes/AllScene/answerpage.unity
     guid: ae32dc9df5a90814b9e605aeea0491f4
   - enabled: 1
-    path: Assets/Scenes/answer_wrong_page.unity
+    path: Assets/Scenes/AllScene/answer_wrong_page.unity
     guid: d94d24e913dc3c84fbe7d70968c48698
   - enabled: 1
-    path: Assets/Scenes/splash_page.unity
+    path: Assets/Scenes/AllScene/splash_page.unity
     guid: d6502ae6449ce2e458da9c82354249d4
   - enabled: 1
-    path: Assets/Scenes/TimeOver.unity
+    path: Assets/Scenes/AllScene/TimeOver.unity
     guid: c084b7b032fa6254aa5e801962d832ff
   - enabled: 1
-    path: Assets/Scenes/ChooseCategory.unity
+    path: Assets/Scenes/AllScene/ChooseCategory.unity
     guid: b4644aabdf2c8034d990e08c32923197
+  - enabled: 1
+    path: Assets/Scenes/AllScene/pop.unity
+    guid: aa11aeef8e1833d469caea35dc7a5c8e
   m_configObjects: {}

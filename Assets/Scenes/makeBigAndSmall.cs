@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//박스를 클릭할 때마다 커졌다가 작아지는 기능을 위한 스크립트
+
 public class makeBigAndSmall : MonoBehaviour
 {
     private Button button;
@@ -12,7 +14,7 @@ public class makeBigAndSmall : MonoBehaviour
     private float animationDuration = 0.2f;
     private float currentTime = 0f;
     private bool isAnimating = false;
-    private bool isButtonClicked = false; //버튼이 클릭됐는가 아닌가?
+    //private bool isButtonClicked = false; //버튼이 클릭됐는가 아닌가?
 
     public void Start()
     {

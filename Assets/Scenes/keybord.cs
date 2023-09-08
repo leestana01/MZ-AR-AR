@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // TMPro 네임스페이스 추가
+using TMPro;
+
+//스플래쉬 화면에서 text에 타이핑하는듯한 애니메이션을 추가
 
 public class keybord : MonoBehaviour
 {
