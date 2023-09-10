@@ -952,7 +952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB2E4\uB978 \uB79C\uB364\uBC15\uC2A4 \uC7A1\uC73C\uB7EC \uAC00\uAE30"
+  m_text: "\uB610\uB2E4\uB978 \uC120\uBB3C \uCC3E\uC73C\uB7EC \uAC00\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
   m_sharedMaterial: {fileID: 3440491480243463787, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}

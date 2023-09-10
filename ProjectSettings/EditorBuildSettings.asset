@@ -47,4 +47,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AllScene/mycultureland.unity
     guid: b4cb9a45b411df54989ea83c8cb984d5
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_1.unity
+    guid: 435dfb993a9600549b3eb5184fdf5ff2
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_2.unity
+    guid: bc68c06674f2f824090831eb87329ec9
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_3.unity
+    guid: 8bd796562e9b9b0448d3d948317c3ce6
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_4.unity
+    guid: fd70088dfc2bc054a9c4654194f777dd
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_5.unity
+    guid: f358e387c642ebc4e88be98e48ce6a9f
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_6.unity
+    guid: 6eb456d60403f074a9b6ff62b4acb1aa
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_7.unity
+    guid: 05832668b94cc8d44812c29e1c76b04a
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_8.unity
+    guid: fae5df0a04a0fe945aeeef26e921f26e
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_9.unity
+    guid: 0d7ab4074d52dd544b4a5a8b8a4b80b5
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_10.unity
+    guid: f0027cbaf25ebee4fbcf3eace89bd539
+  - enabled: 1
+    path: Assets/Scenes/AllScene/story_11.unity
+    guid: 440d6fac3c1bf064388468494c535b56
   m_configObjects: {}

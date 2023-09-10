@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uB798\uC758 \uBC15\uC2A4\uB97C \uB9C8\uAD6C\uB9C8\uAD6C \uD074\uB9AD\uD574\uC11C\n\uD130\uB728\uB9AC\uC138\uC694!"
+  m_text: "\uC544\uB798\uC758 \uC120\uBB3C\uC744 \uB9C8\uAD6C\uB9C8\uAD6C \uD074\uB9AD\uD574\uC11C\n\uD130\uB728\uB9AC\uC138\uC694!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
   m_sharedMaterial: {fileID: 3440491480243463787, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}
