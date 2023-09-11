@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 91135648}
   - component: {fileID: 91135650}
   - component: {fileID: 91135649}
+  - component: {fileID: 91135651}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -257,6 +258,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91135647}
   m_CullTransparentMesh: 1
+--- !u!114 &91135651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91135647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8244267de21c1409ee6e303fb84152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1601638324}
+  soundClip: {fileID: 8300000, guid: 3964812d81ce302408e6018505da0314, type: 3}
+  audioMixerGroup: {fileID: 0}
 --- !u!1 &113391565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1157,7 @@ GameObject:
   - component: {fileID: 656778618}
   - component: {fileID: 656778617}
   - component: {fileID: 656778620}
+  - component: {fileID: 656778621}
   m_Layer: 5
   m_Name: decreaseButton
   m_TagString: Untagged
@@ -1276,6 +1293,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 989992824}
   incrementAmount: 100
+--- !u!114 &656778621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656778615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8244267de21c1409ee6e303fb84152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 656778617}
+  soundClip: {fileID: 8300000, guid: bbd3ee4b000249348986ac04be7480fa, type: 3}
+  audioMixerGroup: {fileID: 0}
 --- !u!1 &707057928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2078,7 @@ GameObject:
   - component: {fileID: 1166170136}
   - component: {fileID: 1166170135}
   - component: {fileID: 1166170138}
+  - component: {fileID: 1166170139}
   m_Layer: 5
   m_Name: increaseButton
   m_TagString: Untagged
@@ -2181,6 +2214,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 989992824}
   incrementAmount: 100
+--- !u!114 &1166170139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166170133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8244267de21c1409ee6e303fb84152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1166170135}
+  soundClip: {fileID: 8300000, guid: bbd3ee4b000249348986ac04be7480fa, type: 3}
+  audioMixerGroup: {fileID: 0}
 --- !u!1 &1491435769
 GameObject:
   m_ObjectHideFlags: 0
