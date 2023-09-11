@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AllScene/story_11.unity
     guid: 440d6fac3c1bf064388468494c535b56
+  - enabled: 1
+    path: Assets/Scenes/AllScene/noticepage.unity
+    guid: 3cdaad5d64512ce4e9f7bec5cef2421b
   m_configObjects: {}

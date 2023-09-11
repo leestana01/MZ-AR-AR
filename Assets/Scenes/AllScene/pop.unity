@@ -363,9 +363,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 902951777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb7a4fa09fc02243a75aa846b70977a, type: 3}
+  m_Script: {fileID: 11500000, guid: d75a882f8b284664bb39be9a9b7cf040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newBGMAudioClip: {fileID: 8300000, guid: e36f7998d494f634daed6bbf89a8a62b, type: 3}
 --- !u!1 &1123759997
 GameObject:
   m_ObjectHideFlags: 0

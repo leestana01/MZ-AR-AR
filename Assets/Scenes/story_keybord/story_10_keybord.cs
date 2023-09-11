@@ -13,7 +13,7 @@ public class story_10_keybord : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialog = "로테와 베르테르가  새벽에 남몰래 데이트를 하러 오기 전에,  몰래 선물을 찾아 뭐가 들었는지  살짝 확인해볼까요?";
+        dialog = "로테와 베르테르가  새벽에 데이트를 하러 돌아오기 전에,  몰래 선물을 찾아 뭐가 들었는지  살짝 확인해볼까요?  '선물 찾아보기' 라고 써있는 버튼을 누르면  베르테르가 숨겨둔 선물이  어디 있는지 볼 수 있대요.";
         StartCoroutine(Typing(dialog));
     }
 
