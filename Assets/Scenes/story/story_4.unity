@@ -383,8 +383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 539.1149, y: -397}
-  m_SizeDelta: {x: 974.523, y: 662.089}
+  m_AnchoredPosition: {x: 539.1149, y: -416.8731}
+  m_SizeDelta: {x: 974.523, y: 701.834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384555334
 MonoBehaviour:
@@ -407,10 +407,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uC774 \uACF3 \uBD84\uB2F9\uC740 \n\uBCA0\uB974\uD14C\uB974\uAC00 \uB5A0\uB098\uAE30
-    \uC804 \n\uB85C\uD14C\uC640 \uBCA0\uB974\uD14C\uB974\uC758 \n\uBE44\uBC00 \uB370\uC774\uD2B8
-    \uC7A5\uC18C\uC600\uC5B4\uC694. \n\n\uC608\uB85C\uBD80\uD130 \n\uC0AC\uB78C\uB4E4\uC758
-    \uB208\uC5D0 \uB744\uC9C0 \uC54A\uB294 \uACF3\uC774\uB77C, \n\uB85C\uD14C\uC640
-    \uBCA0\uB974\uD14C\uB974\uAC00 \n\uB0A8\uBAB0\uB798 \uC0AC\uB791\uC744 \uC774\uC5B4\uAC08
+    \uC804 \n\uB85C\uD14C\uC640\uC758 \uBE44\uBC00 \uB370\uC774\uD2B8 \uC7A5\uC18C\uC600\uC5B4\uC694
+    \n\n\uC608\uB85C\uBD80\uD130 \n\uC0AC\uB78C\uB4E4\uC758 \uB208\uC5D0 \uB744\uC9C0
+    \uC54A\uB294 \uACF3\uC774\uB77C, \n\uB0A8\uBAB0\uB798 \uC0AC\uB791\uC744 \uC774\uC5B4\uAC08
     \uC218 \uC788\uC5C8\uC8E0."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b844e2e59a619546b1e181ac339d73a, type: 2}

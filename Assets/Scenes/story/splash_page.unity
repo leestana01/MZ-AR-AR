@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9a7e0dabfce4d4f87f997fe775c772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashScreenDuration: 3
+  splashScreenDuration: 2.5
   nextSceneName: splash_page2
 --- !u!1 &557298742
 GameObject:
