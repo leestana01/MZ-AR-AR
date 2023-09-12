@@ -5452,7 +5452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55e98fe5de3cd44f8495a471df691b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashScreenDuration: 9999
+  splashScreenDuration: 2
   nextSceneName: quizpage
 --- !u!1 &1602468665
 GameObject:

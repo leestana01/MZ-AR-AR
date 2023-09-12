@@ -1,72 +1,67 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-//박스를 클릭할 때마다 커졌다가 작아지는 기능을 위한 스크립트
-
-public class makeBigAndSmall : MonoBehaviour
+public class BoxClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    private Button button;
-    private RectTransform rectTransform;
-    private Vector2 originalSize;
-    private Vector2 targetSize;
-    private float animationDuration = 0.2f;
-    private float currentTime = 0f;
-    private bool isAnimating = false;
-    //private bool isButtonClicked = false; //버튼이 클릭됐는가 아닌가?
+    public float scaleChange = 0.9f; // 얼마나 작아질 것인지
+    public float duration = 0.1f; // 얼마나 오래 지속될 것인지
 
-    public void Start()
+    private Vector3 originalScale; // 원래 크기 저장용
+
+    void Start()
     {
-        //버튼 및 RectTransform 컴포넌트를 가져온다
-        button = GetComponent<Button>();
-        rectTransform = GetComponent<RectTransform>();
-
-        //초기 랜덤박스 버튼의 크기를 저장한다
-        originalSize = rectTransform.sizeDelta;
-        targetSize = originalSize;
-
-        //버튼 클릭 이벤트에 함수를 연결함
-        button.onClick.AddListener(ChangeSize);
+        originalScale = transform.localScale; // 원래 크기 저장
     }
 
-    public void Update()
+    public void OnPointerDown(PointerEventData eventData)
     {
-        //만약 애니메이션 중이면 크게 크기 변경
-        if (isAnimating)
-        {
-            currentTime += Time.deltaTime;
-            float t = Mathf.Clamp01(currentTime / animationDuration);
-            rectTransform.sizeDelta = Vector2.Lerp(originalSize, targetSize, t);
+        // 진동 효과 (안드로이드와 iOS에서만 작동)
+        Handheld.Vibrate();
 
-            if (t >= 1f)
-            {
-                isAnimating = false;
-                currentTime = 0f;
-            }
-        }
+        // 크기 축소
+        StartCoroutine(ScaleDown());
     }
 
-    public void ChangeSize()
+    public void OnPointerUp(PointerEventData eventData)
     {
+        // 크기 복구
+        StartCoroutine(ScaleUp());
+    }
 
-        if (isAnimating)
+    IEnumerator ScaleDown()
+    {
+        Vector3 targetScale = originalScale * scaleChange;
+        Vector3 diffScale = originalScale - targetScale;
+
+        float counter = 0;
+        while (counter < duration)
         {
-            return;
+            counter += Time.deltaTime;
+            float t = counter / duration;
+            transform.localScale = originalScale - diffScale * t;
+            yield return null;
         }
 
-        //버튼 크기 변경
-        if (rectTransform.sizeDelta == originalSize)
+        transform.localScale = targetScale;
+    }
+
+    IEnumerator ScaleUp()
+    {
+        Vector3 targetScale = originalScale;
+        Vector3 currentScale = transform.localScale;
+        Vector3 diffScale = targetScale - currentScale;
+
+        float counter = 0;
+        while (counter < duration)
         {
-            //버튼이 클릭되었을 때 크기를 키운다
-            targetSize = originalSize * 1.5f;
-        }
-        else
-        {
-            //버튼이 클릭되지 않은 상태라면 초기 설정한 크기가 된다
-            targetSize = originalSize;
+            counter += Time.deltaTime;
+            float t = counter / duration;
+            transform.localScale = currentScale + diffScale * t;
+            yield return null;
         }
 
-        isAnimating = true;
+        transform.localScale = originalScale;
     }
 }
