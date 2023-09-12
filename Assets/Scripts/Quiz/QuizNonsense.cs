@@ -29,6 +29,9 @@ public class QuizNonsense : MonoBehaviour
 
     void Start()
     {
+        if (PlayerPrefs.GetInt("Category", 0) != 2) {
+            return;
+        }
         // 문제와 선택지, 정답을 리스트에 추가한다.
         quizDataList = new List<QuizData>
         {
@@ -108,10 +111,12 @@ public class QuizNonsense : MonoBehaviour
     {
         if (optionIndex == currentQuizData.correctAnswer)
         {
+            PlayerPrefs.SetInt("MyPoint", PlayerPrefs.GetInt("MyPoint",0) + 200);
             SceneManager.LoadScene("answerpage");
         }
         else
         {
+            PlayerPrefs.SetInt("MyPoint", PlayerPrefs.GetInt("MyPoint",0) + 50);
             SceneManager.LoadScene("answer_wrong_page");
         }
     }

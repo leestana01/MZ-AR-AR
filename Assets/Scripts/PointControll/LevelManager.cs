@@ -1,16 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
-    public int level; // 레벨 정보
-    public TMP_Text level_display; // 레벨을 표시할 텍스트
-    public TMP_Text level_name; // 레벨 이름을 표시할 텍스트
+    public TextMeshProUGUI level_display; // 레벨을 표시할 텍스트
+    public TextMeshProUGUI level_name; // 레벨 이름을 표시할 텍스트
+    private int level; // 클래스 멤버 변수로 선언
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdateLevelText();
+        level = PlayerPrefs.GetInt("TreasureFound", 0); // 레벨 정보를 멤버 변수에 저장
+        UpdateLevelText(); // 레벨 텍스트 업데이트
     }
 
     // 레벨 텍스트와 레벨 이름을 업데이트하는 함수
@@ -45,7 +48,7 @@ public class LevelManager : MonoBehaviour
             level_name.text = "탐험의 대가";
         }
     }
-    
+
     // Update is called once per frame
     void Update()
     {

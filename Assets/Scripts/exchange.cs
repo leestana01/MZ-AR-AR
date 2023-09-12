@@ -9,27 +9,28 @@ public class exchange : MonoBehaviour
     public TextMeshProUGUI aText;
     public TextMeshProUGUI bText;
 
+    private int nowPoint;
+
     public void Start()
     {
-        aText.text = "750";
+        nowPoint = PlayerPrefs.GetInt("MyPoint", 0);
+        aText.text = nowPoint.ToString();
         bText.text = "100";
     }
 
     public void OnButtonClick()
     {
-        int aPoints = int.Parse(aText.text);
-        int bPoints = int.Parse(bText.text);
-        int result = aPoints - bPoints;
+        int result = nowPoint - int.Parse(bText.text);
 
         if (result < 0)
         {
-            SceneManager.LoadScene("minusPoint"); //±³È¯ÇÏ°íÀÚ ÇÏ´Â Æ÷ÀÎÆ®°¡ º¸À¯ Æ÷ÀÎÆ®º¸´Ù ÀÛÀ¸¸é minusPoint·Î ¾À ÀüÈ¯
+            SceneManager.LoadScene("minusPoint"); //êµí™˜í•˜ê³ ìž í•˜ëŠ” í¬ì¸íŠ¸ê°€ ë³´ìœ  í¬ì¸íŠ¸ë³´ë‹¤ ìž‘ìœ¼ë©´ minusPointë¡œ ì”¬ ì „í™˜
         }
         else
         {
-            //ÇöÀç º¸À¯ Æ÷ÀÎÆ®¸¦ ¾÷µ¥ÀÌÆ®
-            aText.text = result.ToString();
-            // SceneManager.LoadScene("mypage");
+            //í˜„ìž¬ ë³´ìœ  í¬ì¸íŠ¸ë¥¼ ì—…ë°ì´íŠ¸
+            PlayerPrefs.SetInt("MyPoint", result);
+            SceneManager.LoadScene("mypage");
         }
     }
 }

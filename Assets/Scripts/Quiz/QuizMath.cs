@@ -29,6 +29,9 @@ public class QuizMath : MonoBehaviour
 
     void Start()
     {
+        if (PlayerPrefs.GetInt("Category", 0) != 1) {
+            return;
+        }
         // 문제와 선택지, 정답을 리스트에 추가한다.
         quizDataList = new List<QuizData>
         {
@@ -110,10 +113,12 @@ public class QuizMath : MonoBehaviour
     {
         if (optionIndex == currentQuizData.correctAnswer)
         {
+            PlayerPrefs.SetInt("MyPoint", PlayerPrefs.GetInt("MyPoint",0) + 200);
             SceneManager.LoadScene("answerpage");
         }
         else
         {
+            PlayerPrefs.SetInt("MyPoint", PlayerPrefs.GetInt("MyPoint",0) + 50);
             SceneManager.LoadScene("answer_wrong_page");
         }
     }
