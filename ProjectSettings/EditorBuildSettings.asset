@@ -54,12 +54,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainPage/MainPage.unity
     guid: aa877901d86c8504db7532c6b24d058a
   - enabled: 1
+    path: Assets/Scenes/MainPage/TicketExchange.unity
+    guid: 052399000ae13274397819fb05d14080
+  - enabled: 1
+    path: Assets/Scenes/MainPage/TicketNow.unity
+    guid: 55b733e61025fef468fb88848d407706
+  - enabled: 0
     path: Assets/Scenes/MainPage/Old/MyPage.unity
     guid: d5bf029f22c2c5c43ba84ee7a72b2288
   - enabled: 1
-    path: Assets/Scenes/MainPage/Old/minusPoint.unity
+    path: Assets/Scenes/MainPage/minusPoint.unity
     guid: 0879902b86acb354d9c705e8b83891a0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainPage/Old/mycultureland.unity
     guid: b4cb9a45b411df54989ea83c8cb984d5
   - enabled: 1
