@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-//·£´ı¹Ú½º¸¦ Å¬¸¯ÇÑ È½¼ö¸¦ ¶ç¿öÁÖ±â À§ÇÑ ½ºÅ©¸³Æ®
+//ëœë¤ë°•ìŠ¤ë¥¼ í´ë¦­í•œ íšŸìˆ˜ë¥¼ ë„ì›Œì£¼ê¸° ìœ„í•œ ìŠ¤í¬ë¦½íŠ¸
 
 public class ButtonClickHandler : MonoBehaviour
 {
@@ -13,20 +13,20 @@ public class ButtonClickHandler : MonoBehaviour
 
     private void Start()
     {
-        //½ÃÀÛ ½Ã Text UI(Text)ÀÇ ÃÊ±â ÅØ½ºÆ® ¼³Á¤
-        textToDecrease.text = "20";
+        //ì‹œì‘ ì‹œ Text UI(Text)ì˜ ì´ˆê¸° í…ìŠ¤íŠ¸ ì„¤ì •
+        // textToDecrease.text = "20";
     }
 
     public void DecreaseTextValue()
     {
-        //¹öÆ° Å¬¸¯ ½Ã TMP_TextÀÇ ÅØ½ºÆ® °ªÀ» 1¾¿ °¨¼Ò
+        //ë²„íŠ¼ í´ë¦­ ì‹œ TMP_Textì˜ í…ìŠ¤íŠ¸ ê°’ì„ 1ì”© ê°ì†Œ
         int currentValue = int.Parse(textToDecrease.text);
         if (currentValue > 0)
         {
             currentValue--;
             textToDecrease.text = currentValue.ToString();
         }
-        //ÅØ½ºÆ®°¡ 0ÀÌ µÇ¸é ¸ñÇ¥ ¾ÀÀ¸·Î ÀÌµ¿
+        //í…ìŠ¤íŠ¸ê°€ 0ì´ ë˜ë©´ ëª©í‘œ ì”¬ìœ¼ë¡œ ì´ë™
         if (currentValue == 0)
         {
             StartCoroutine(TransitionToPOPScene());
@@ -36,7 +36,7 @@ public class ButtonClickHandler : MonoBehaviour
     public IEnumerator TransitionToPOPScene()
     {
 
-        //´ë±â ½Ã°£ (pop È­¸é Áö¼Ó ½Ã°£)
+        //ëŒ€ê¸° ì‹œê°„ (pop í™”ë©´ ì§€ì† ì‹œê°„)
         yield return new WaitForSeconds(0.05f);
 
         SceneManager.LoadScene("pop");

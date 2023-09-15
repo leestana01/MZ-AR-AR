@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 357101776}
   - component: {fileID: 357101775}
   - component: {fileID: 357101778}
+  - component: {fileID: 357101779}
   m_Layer: 0
   m_Name: DataController
   m_TagString: Untagged
@@ -599,6 +600,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level_display: {fileID: 1180674233}
   level_name: {fileID: 1144388215}
+--- !u!114 &357101779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357101774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03da292e0c6bd9e41b8f362fa00b4dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticket: {fileID: 2031438320}
 --- !u!1 &424116200
 GameObject:
   m_ObjectHideFlags: 0

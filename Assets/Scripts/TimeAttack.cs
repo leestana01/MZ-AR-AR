@@ -5,12 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-//·£´ý¹Ú½º Å¬¸¯ÀÌ °¡´ÉÇÑ ³²Àº ½Ã°£(ÃÊ)À» º¸¿©ÁÖ±â À§ÇÑ ½ºÅ©¸³Æ®
+//ëžœë¤ë°•ìŠ¤ í´ë¦­ì´ ê°€ëŠ¥í•œ ë‚¨ì€ ì‹œê°„(ì´ˆ)ì„ ë³´ì—¬ì£¼ê¸° ìœ„í•œ ìŠ¤í¬ë¦½íŠ¸
 
 public class TimeAttack : MonoBehaviour
 {
     public TMP_Text countdownText;
-    private int countdownValue = 30;
+    // private int countdownValue = 30;
 
     private void Start()
     {
@@ -19,11 +19,12 @@ public class TimeAttack : MonoBehaviour
 
     IEnumerator StartCountdown()
     {
+        int countdownValue = int.Parse(countdownText.text);
         while (countdownValue > 0)
         {
-            countdownText.text = countdownValue.ToString();
             yield return new WaitForSeconds(1f);
             countdownValue--;
+            countdownText.text = countdownValue.ToString();
         }
 
         SceneManager.LoadScene("TimeOver");

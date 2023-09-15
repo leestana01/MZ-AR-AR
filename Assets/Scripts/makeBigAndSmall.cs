@@ -5,29 +5,40 @@ using UnityEngine.UI;
 
 public class BoxClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public float scaleChange = 0.9f; // ¾ó¸¶³ª ÀÛ¾ÆÁú °ÍÀÎÁö
-    public float duration = 0.1f; // ¾ó¸¶³ª ¿À·¡ Áö¼ÓµÉ °ÍÀÎÁö
+    public float scaleChange = 0.9f; // ì–¼ë§ˆë‚˜ ì‘ì•„ì§ˆ ê²ƒì¸ì§€
+    public float duration = 0.1f; // ì–¼ë§ˆë‚˜ ì˜¤ë˜ ì§€ì†ë  ê²ƒì¸ì§€
+    public Sprite openBoxSprite; // ë°˜ì¯¤ ì—´ë¦° ë°•ìŠ¤ ì´ë¯¸ì§€
+    public Sprite closeBoxSprite; // ì›ë˜ ë°•ìŠ¤ ì´ë¯¸ì§€
 
-    private Vector3 originalScale; // ¿ø·¡ Å©±â ÀúÀå¿ë
+    private Vector3 originalScale; // ì›ë˜ í¬ê¸° ì €ì¥ìš©
+    private Image image; // Image ì»´í¬ë„ŒíŠ¸ ì €ì¥ìš©
 
     void Start()
     {
-        originalScale = transform.localScale; // ¿ø·¡ Å©±â ÀúÀå
+        originalScale = transform.localScale; // ì›ë˜ í¬ê¸° ì €ì¥
+        image = GetComponent<Image>(); // Image ì»´í¬ë„ŒíŠ¸ ê°€ì ¸ì˜¤ê¸°
+        image.sprite = closeBoxSprite; // ì´ˆê¸° ì´ë¯¸ì§€ ì„¤ì •
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        // Áøµ¿ È¿°ú (¾Èµå·ÎÀÌµå¿Í iOS¿¡¼­¸¸ ÀÛµ¿)
+        // ì§„ë™ íš¨ê³¼ (ì•ˆë“œë¡œì´ë“œì™€ iOSì—ì„œë§Œ ì‘ë™)
         Handheld.Vibrate();
 
-        // Å©±â Ãà¼Ò
+        // í¬ê¸° ì¶•ì†Œ
         StartCoroutine(ScaleDown());
+
+        // ìŠ¤í”„ë¼ì´íŠ¸ êµì²´ (ë°˜ì¯¤ ì—´ë¦° ë°•ìŠ¤ë¡œ)
+        image.sprite = openBoxSprite;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        // Å©±â º¹±¸
+        // í¬ê¸° ë³µêµ¬
         StartCoroutine(ScaleUp());
+
+        // ìŠ¤í”„ë¼ì´íŠ¸ ë³µêµ¬ (ì›ë˜ ë°•ìŠ¤ë¡œ)
+        image.sprite = closeBoxSprite;
     }
 
     IEnumerator ScaleDown()
